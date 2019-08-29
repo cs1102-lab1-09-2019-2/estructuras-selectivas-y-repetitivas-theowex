@@ -9,7 +9,10 @@ Github Username:
 
 Instrucciones:
 --
+Resolver los ejercicios de [estructuras de control selectiva y repetitiva](https://github.com/cs1102-lab1-09-2019-2/oop1_structure_control_2_template/blob/master/Ejercicios_estructuras_de_control.PDF).
 
+Agregar la solución en cada uno de los templates respectivos.
+La solución del Ejercicio 1 debe estar en el archivo **ejercicio1.cpp**
 
 Comandos:
 --
