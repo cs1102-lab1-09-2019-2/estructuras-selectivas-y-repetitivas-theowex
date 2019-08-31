@@ -1,10 +1,10 @@
 # Ejercicios de estructura de control 2
 ## Selectivas y Repetitivas
 
-Nombre:
+Nombre: Owen Rivaldo Atamari Aldazabal
 --
 
-Github Username:
+Github Username: theowex
 --
 
 Instrucciones:
