@@ -4,7 +4,7 @@
 using namespace std;
 
 float calcularPromedio(int estudiantes){
-    float PC1, PC2, PC3, PC4, PROYECTO, E1, E2, promedio;
+    float PC1, PC2, PC3, PC4, P, E1, E2, promedio;
     cout << "Alumno numero " << estudiantes + 1 << "\n";
     do{
         cout<<"Practica 1: ";
@@ -24,8 +24,8 @@ float calcularPromedio(int estudiantes){
     }while (PC4 < 0 || PC4 > 20);
     do{
         cout<<"Proyecto: ";
-        cin>>PROYECTO;
-    }while (PROYECTO < 0 || PROYECTO > 20);
+        cin >> P;
+    }while (P < 0 || P > 20);
     do{
         cout<<"Examen 1: ";
         cin>>E1;
@@ -34,7 +34,7 @@ float calcularPromedio(int estudiantes){
         cout<<"Examen 2: ";
         cin>>E2;
     }while (E2 < 0 || E2 > 20);
-    promedio = 0.05*PC1 + 0.1*PC2 + 0.1*PC3 + 0.15*PC4 + 0.2 * PROYECTO + 0.2*E1 + 0.2*E2 ;
+    promedio = 0.05*PC1 + 0.1*PC2 + 0.1*PC3 + 0.15*PC4 + 0.2 * P + 0.2 * E1 + 0.2 * E2 ;
     return promedio;
 }
 
@@ -70,5 +70,5 @@ int main() {
         cout<<"UD asistira al "<<evento<<"\n";
         contador++;
     }while (contador < numAlumnos);
-    return 0;
+
 }
