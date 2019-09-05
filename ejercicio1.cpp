@@ -3,9 +3,9 @@
 
 using namespace std;
 
-float calcularPromedio(int n_estudiantes){
+float calcularPromedio(int estudiantes){
     float PC1, PC2, PC3, PC4, PROYECTO, E1, E2, promedio;
-    cout<<"Alumno numero "<<n_estudiantes +1<<"\n";
+    cout << "Alumno numero " << estudiantes + 1 << "\n";
     do{
         cout<<"Practica 1: ";
         cin>>PC1;
@@ -39,10 +39,10 @@ float calcularPromedio(int n_estudiantes){
 }
 
 string obtenerEvento(float promedio){
-    string evento1 = "ACM - ICPC International Collegiate Programming Contest.";
-    string evento2 = "Imagine Cup.";
-    string evento3 = "Hackaton.";
-    string recomendacion = "Necesita mejorar para poder participar.";
+    string evento1 = "ACM ICPC International Collegiate Programming Contest";
+    string evento2 = "Imagine Cup";
+    string evento3 = "Hackaton de Miraflores";
+    string recomendacion = "Necesita mejorar.";
     if (promedio >= 18.0 && promedio <= 20.0){
         return evento1;
     }else if (promedio >= 15.0 && promedio <= 17.99){
@@ -56,9 +56,8 @@ string obtenerEvento(float promedio){
 
 int main() {
     int numAlumnos;
-    int n_estudiantes;
     do {
-        cout << "Numero de estudiantes: ";
+        cout << "Numero de alumnos: ";
         cin >> numAlumnos;
     }while (numAlumnos <= 3 || numAlumnos > 30);
     float promedio;
@@ -67,9 +66,9 @@ int main() {
     do{
         promedio=calcularPromedio(contador);
         evento = obtenerEvento(promedio);
-        cout<<"Su promedio es: "<<promedio<<"\n";
-        cout<<"Ud. asistirá al: "<<evento<<"\n";
+        cout<<endl<<"Su promedio es "<<promedio<<"\n";
+        cout<<"UD asistira al "<<evento<<"\n";
         contador++;
-    }while (contador < n_estudiantes);
+    }while (contador < numAlumnos);
     return 0;
 }
